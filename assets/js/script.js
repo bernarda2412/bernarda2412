@@ -26,6 +26,7 @@ function changeColor() {
     icon.classList.toggle("icon-clicked");
 }
 
+
 // Función que aplica las animaciones de las habilidades
 function efectoHabilidades() {
     var skills = document.getElementById("skills");

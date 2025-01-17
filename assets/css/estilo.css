@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #c916cf;
+    color: #7c16cf;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #c916cf;
+    border: 10px solid #560a79;
     display: block;
     width: 80%;
     margin: auto;
@@ -107,13 +107,52 @@ html{
     background-color: #f57fc8;
 }
 .icon-clicked {
-    color: rgb(228, 14, 181); /* Cambia esto al color que desees */
+    color: rgb(228, 14, 181); 
+}   /* Cambia esto al color que desees */
+.fotos img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.fotos img:hover {
+    transform: scale(1.5);
+}
+.fotos {
+    display: flex;
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid hwb(0 98% 1%);
+    border-radius: 5px;
+    overflow: hidden;
+    width: 120px;
+    text-align: center;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.card img:hover {
+    transform: scale(1.5);
+}
+
+.card-description {
+    padding: 10px;
+    background-color: hsl(0, 0%, 5%);
+    font-size: 12px;
 }
 .sobremi{
     background-color: #1e2326;
     color: #fff;
     padding: 50px 20px;
 }
+
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
@@ -388,15 +427,15 @@ html{
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda{
-    border-right: 2px solid #252A2E;
+    border-right: 2px solid #c40b96;
 }
 .curriculum .fila .derecha{
-    border-left: 2px solid #252A2E;
+    border-left: 2px solid #c40b96;
 }
 .curriculum .fila .item{
     padding: 25px;
     margin-bottom: 30px;
-    background-color: #252A2E;
+    background-color: #c40b96;
     position: relative;
 }
 .curriculum .fila .item h4{
@@ -418,16 +457,16 @@ html{
     line-height: 24px;
 }
 .curriculum .fila .izq{
-    border-right: 2px solid #1CB698;
+    border-right: 2px solid #c40b96;
     margin-right: 20px;
 }
 .curriculum .fila .der{
-    border-left: 2px solid #1CB698;
+    border-left: 2px solid #c40b96;
     margin-left: 20px;
 }
 .curriculum .fila .item .conectori{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #c40b96;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -439,14 +478,14 @@ html{
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: #1CB698;
+    background-color: #c40b96;
     float: right;
     position: relative;
     bottom: 4px;
 }
 .curriculum .fila .item .conectord{
     height: 2px;
-    background-color: #1CB698;
+    background-color: #c40b96;
     width: 47px;
     position: absolute;
     top: 50%;
@@ -458,7 +497,7 @@ html{
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background-color: #1CB698;
+        background-color: #c40b96;
         float: left;
         position: relative;
         bottom: 4px;
@@ -504,7 +543,7 @@ html{
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
-        color: #fff;
+        color: #fff3f3;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -532,7 +571,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(219, 56, 179, 0.8), rgba(219, 56, 179, 0.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -741,4 +780,5 @@ footer .arriba{
     .contacto .fila .col{
         width: 100%;
     }
+    
 }
